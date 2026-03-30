@@ -1,5 +1,5 @@
 """
-app.py — Ironclad Scholar Pro
+app.py — Scan My Notes
 -----------------------------
 Productivity & Study Suite featuring:
 1. Workspace with Chat 
@@ -21,8 +21,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(
-    page_title="Ironclad Scholar Pro",
-    page_icon="🛡️",
+    page_title="Scan My Notes",
+    page_icon="📝",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -62,8 +62,8 @@ def init_session():
 init_session()
 
 # ── Persistent Storage ────────────────────────────────────────────────────────
-HISTORY_FILE = "ironclad_history.json"
-TODOS_FILE = "ironclad_todos.json"
+HISTORY_FILE = "scan_my_notes_history.json"
+TODOS_FILE = "scan_my_notes_todos.json"
 
 def save_data():
     with open(HISTORY_FILE, "w") as f:
@@ -193,7 +193,7 @@ def render_assistant_message(msg: Dict[str, Any]):
         cite_html = f'<div class="citation-footer">📍 <strong>Spatial Anchors</strong><br>{lines}</div>'
         
     st.markdown(
-        f'<div class="chat-assistant">🛡️ {badge}<div style="margin:1rem 0;">{content}</div>{cite_html}</div>',
+        f'<div class="chat-assistant">📝 {badge}<div style="margin:1rem 0;">{content}</div>{cite_html}</div>',
         unsafe_allow_html=True
     )
 
@@ -256,8 +256,8 @@ with st.sidebar:
     
     st.markdown("""
     <div style="text-align:center; padding:0 0 1rem 0;">
-        <span style="font-size:3rem; line-height:1;">🛡️</span>
-        <h3 style="color:#60a5fa; margin:0; font-size:1.4rem;">Ironclad Scholar</h3>
+        <span style="font-size:3rem; line-height:1;">📝</span>
+        <h3 style="color:#60a5fa; margin:0; font-size:1.4rem;">Scan My Notes</h3>
     </div>
     """, unsafe_allow_html=True)
     

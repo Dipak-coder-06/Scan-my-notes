@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ Ironclad Scholar Pro
+# 📝 Scan My Notes
 
 **High-Precision, Privacy-First Document Intelligence for Handwritten & Typed Notes**
 
@@ -89,13 +89,13 @@ ollama pull llama3.2
 1. Go to [console.cloud.google.com](https://console.cloud.google.com)
 2. Create a project → enable the **Cloud Vision API**
 3. Create a **Service Account** → download the JSON key
-4. Copy the key file somewhere safe (e.g., `~/.config/ironclad/gcp-key.json`)
+4. Copy the key file somewhere safe (e.g., `~/.config/scan-my-notes/gcp-key.json`)
 
 ### Step 3 — Clone & Configure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Ironclad-Scholar.git
-cd Ironclad-Scholar
+git clone https://github.com/YOUR_USERNAME/Scan-my-notes.git
+cd Scan-my-notes
 
 # Copy the environment template
 cp .env.example .env
@@ -134,7 +134,7 @@ Open **http://localhost:8501** in your browser. 🎉
 ## 📁 Project Structure
 
 ```
-Ironclad-Scholar/
+Scan-my-notes/
 │
 ├── app.py                       # 🖥️  Streamlit UI — all 4 pages
 │

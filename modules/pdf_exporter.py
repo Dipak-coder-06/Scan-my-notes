@@ -65,7 +65,7 @@ def export_qa_to_pdf(doc_name: str, chat_history: List[Dict[str, Any]]) -> bytes
     story = []
     
     # Title
-    story.append(Paragraph(f"Ironclad Scholar QA Report", title_style))
+    story.append(Paragraph(f"Scan My Notes — Q&A Report", title_style))
     story.append(Paragraph(f"<b>Document:</b> {doc_name}", styles['Normal']))
     story.append(Spacer(1, 20))
     story.append(HRFlowable(width="100%", thickness=1, color=HexColor('#d1d5db'), spaceAfter=20))
@@ -162,7 +162,7 @@ def export_mcqs_to_pdf(doc_name: str, mcqs: List[Dict[str, Any]]) -> bytes:
 
     story = []
     
-    story.append(Paragraph(f"Ironclad Scholar MCQ Quiz", title_style))
+    story.append(Paragraph(f"Scan My Notes — MCQ Quiz", title_style))
     story.append(Paragraph(f"<b>Document:</b> {doc_name}", styles['Normal']))
     story.append(Spacer(1, 20))
     story.append(HRFlowable(width="100%", thickness=1, color=HexColor('#d1d5db'), spaceAfter=20))

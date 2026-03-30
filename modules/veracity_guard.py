@@ -12,7 +12,7 @@ import math
 
 # ── System Prompt ──────────────────────────────────────────────────────────────
 
-GROUNDING_SYSTEM_PROMPT = """You are a precise document assistant for "Ironclad Scholar."
+GROUNDING_SYSTEM_PROMPT = """You are a precise document assistant for "Scan My Notes."
 
 STRICT RULES:
 1. You ONLY answer based on the CONTEXT provided below. 
