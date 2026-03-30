@@ -1,0 +1,24 @@
+# Core
+streamlit>=1.32.0
+python-dotenv>=1.0.0
+
+# OCR - Google Cloud Vision
+google-cloud-vision>=3.7.0
+
+# PDF handling
+PyMuPDF>=1.23.0
+
+# Vector DB
+chromadb>=0.4.24
+
+# Embeddings + LLM via Ollama
+ollama>=0.1.8
+
+# Hybrid retrieval
+rank-bm25>=0.2.2
+numpy>=1.26.0
+
+# Utilities
+Pillow>=10.2.0
+tqdm>=4.66.0
+reportlab>=4.1.0

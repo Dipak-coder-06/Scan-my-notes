@@ -1,0 +1,85 @@
+# === SECRETS — NEVER COMMIT ===
+*.json
+!package.json
+service_account.json
+*credentials*.json
+*key*.json
+
+# .env files (keep example only)
+.env
+.env.local
+.env.*.local
+
+# === IRONCLAD SCHOLAR RUNTIME DATA ===
+ironclad_history.json
+ironclad_todos.json
+chroma_db/
+notes.pdf
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# === EDITORS & OS ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.log
